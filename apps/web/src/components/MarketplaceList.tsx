@@ -16,8 +16,6 @@ interface Listing {
 }
 
 const ListingCard = ({ listing, onBuy }: { listing: Listing, onBuy: (listing: Listing) => void }) => {
-    const [metadata, setMetadata] = useState<any>(null);
-    const [loading, setLoading] = useState(true);
     const { publicKey } = useWallet();
 
     // useEffect(() => {
@@ -52,7 +50,6 @@ const ListingCard = ({ listing, onBuy }: { listing: Listing, onBuy: (listing: Li
                         className="w-full h-full object-cover transition-transform hover:scale-105"
                         loading="lazy"
                         onError={(e) => {
-                            console.error('Image load failed for:', metadata.image);
                             (e.target as HTMLImageElement).src = 'https://placehold.co/400x400?text=No+Image';
                         }}
                     />
