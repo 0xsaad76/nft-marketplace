@@ -1,6 +1,8 @@
-# NFT Marketplace (Monorepo)
+# NFT Marketplace
 
-A full-stack NFT Marketplace on Solana, featuring a React frontend, Cloudflare Worker backend, and Anchor smart contracts.
+A full-stack NFT Marketplace on Solana
+
+<img width="1640" height="808" alt="image" src="https://github.com/user-attachments/assets/b5d688c3-77b1-47af-a2fe-fcec62a91f0d" />
 
 ## 📂 Project Structure
 
